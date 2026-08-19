@@ -2,32 +2,25 @@
 
 .nav__custom {
   background-color: white;
-  font-family: $font-heading !important;
-  font-size: $font-xsmall;
+  font-family: $font-nav;
+  font-size: $font-xxxsmall;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .nav__logo {
-  margin-left: 300px;
-  margin-right: 50px;
+  margin-left: 250px;
+  margin-right: 80px;
 }
 
 .nav-link {
-  font-weight: $font-mediumbold !important;
-}
-
-.carousel-control-next-icon {
-  background-color: $nav-bookcolor;
-  width: 30px;
-  height: 30px;
-  padding: 20px 20px 20px 20px !important;
+  font-weight: $font-mediumbold;
 }
 
 .nav__custom .nav-link {
   color: black !important;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .nav__custom .navbar-nav {
@@ -42,6 +35,7 @@
 
 .nav__hamburger {
   margin-left: 100px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -74,7 +68,7 @@
   }
 
   &:hover::before {
-    animation: bookNow 0.8s ease forwards;
+    animation: bookNowBtn 0.8s ease forwards;
   }
 
   p {
@@ -92,32 +86,30 @@
   }
 }
 
-@keyframes bookNow {
-  0% {
-    transform: scaleX(0);
-    transform-origin: left; // იწყებს ანიმაციას მარცხნიდან
-  }
-
-  100% {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-}
-
-body {
-  background-color: black;
-}
-
 /* Hero */
+
+.hero {
+  position: relative;
+}
 
 .hero__page {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   margin: 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  font-family: $font-hero;
+}
+
+.hero__page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero__page--1 {
@@ -130,4 +122,100 @@ body {
 
 .hero__page--3 {
   background-image: url("https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-3.jpg");
+}
+
+.carousel__button {
+  background-color: $nav-bookcolor;
+  opacity: 1;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+
+  padding: 0;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: $nav-bookhovercolor;
+  }
+}
+
+.carousel__button--1 {
+  left: 5%;
+}
+
+.carousel__button--2 {
+  right: 5%;
+}
+
+.hero__content {
+  position: absolute;
+  width: 800px;
+  height: 370px;
+  border-left: 4px solid white;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  top: 27%;
+  left: 15%;
+  padding-left: 20px;
+}
+
+.hero__content__subtitle {
+  @include subtitle($font-xxxsmall, white);
+  letter-spacing: 2.5px;
+  font-weight: 1000;
+
+  margin-bottom: 30px;
+}
+
+.hero__content__title {
+  @include title($font-xxxlarge, white, 500px);
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+.hero__content__description {
+  @include description($font-xxxsmall, white, 1px, 900px);
+  margin-bottom: 35px;
+}
+
+.hero__content__button {
+  font-weight: 900;
+  @include hero-button(200px, 80px, 5px, $nav-bookcolor, white, $font-medium);
+
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: $nav-bookhovercolor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    animation: heroBtn 0.8s ease forwards;
+  }
+}
+
+.booking {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0px 4px 5px rgb(233, 233, 233);
+  border-radius: 10px;
 }

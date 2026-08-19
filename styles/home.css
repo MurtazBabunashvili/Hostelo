@@ -1,32 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@keyframes bookNowBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+@keyframes heroBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
 .nav__custom {
   background-color: white;
-  font-family: "Playfair Display", serif !important;
-  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .nav__logo {
-  margin-left: 300px;
-  margin-right: 50px;
+  margin-left: 250px;
+  margin-right: 80px;
 }
 
 .nav-link {
-  font-weight: 500 !important;
-}
-
-.carousel-control-next-icon {
-  background-color: #003350;
-  width: 30px;
-  height: 30px;
-  padding: 20px 20px 20px 20px !important;
+  font-weight: 500;
 }
 
 .nav__custom .nav-link {
   color: black !important;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .nav__custom .navbar-nav {
@@ -41,6 +55,7 @@
 
 .nav__hamburger {
   margin-left: 100px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -70,7 +85,7 @@
   transform-origin: left;
 }
 .nav__book:hover::before {
-  animation: bookNow 0.8s ease forwards;
+  animation: bookNowBtn 0.8s ease forwards;
 }
 .nav__book p {
   margin: 0;
@@ -85,29 +100,28 @@
   z-index: 1;
 }
 
-@keyframes bookNow {
-  0% {
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  100% {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-}
-body {
-  background-color: black;
+/* Hero */
+.hero {
+  position: relative;
 }
 
-/* Hero */
 .hero__page {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   margin: 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.hero__page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero__page--1 {
@@ -120,4 +134,101 @@ body {
 
 .hero__page--3 {
   background-image: url("https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-3.jpg");
+}
+
+.carousel__button {
+  background-color: #003350;
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s;
+}
+.carousel__button:hover {
+  background-color: #d6af00;
+}
+
+.carousel__button--1 {
+  left: 5%;
+}
+
+.carousel__button--2 {
+  right: 5%;
+}
+
+.hero__content {
+  position: absolute;
+  width: 800px;
+  height: 370px;
+  border-left: 4px solid white;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  top: 27%;
+  left: 15%;
+  padding-left: 20px;
+}
+
+.hero__content__subtitle {
+  font-size: 19px;
+  color: white;
+  letter-spacing: 2.5px;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+
+.hero__content__title {
+  font-size: 60px;
+  color: white;
+  width: 500px;
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+.hero__content__description {
+  font-size: 19px;
+  color: white;
+  letter-spacing: 1px;
+  width: 900px;
+  margin-bottom: 35px;
+}
+
+.hero__content__button {
+  font-weight: 900;
+  border: none;
+  width: 200px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #003350;
+  color: white;
+  font-size: 22px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.hero__content__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #d6af00;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+.hero__content__button:hover::before {
+  animation: heroBtn 0.8s ease forwards;
+}
+
+.booking {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0px 4px 5px rgb(233, 233, 233);
+  border-radius: 10px;
 }/*# sourceMappingURL=home.css.map */

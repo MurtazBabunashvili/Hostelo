@@ -1,0 +1,23 @@
+@keyframes bookNowBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left; // იწყებს ანიმაციას მარცხნიდან
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes heroBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right; // იწყებს ანიმაციას მარჯვნიდან
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

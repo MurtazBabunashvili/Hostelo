@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
 
-$font-heading: "Playfair Display", serif;
+$font-nav: "Playfair Display", serif;
+$font-hero: "Cormorant Garamond", serif;
 $font-body: "Lora", serif;
+$font-xxxlarge: 60px;
 $font-xxlarge: 45px;
 $font-xlarge: 38px;
 $font-large: 32px;
-$font-xmedium: 26px;
+$font-xxmedium: 26px;
+$font-xmedium: 24px;
 $font-medium: 22px;
-$font-xsmall: 17px;
+$font-xxxsmall: 19px;
+$font-xxsmall: 17px;
+$font-xsmall: 15.5px;
 $font-small: 14px;
 
 $font-xbold: 900;

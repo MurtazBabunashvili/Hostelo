@@ -1,0 +1,16 @@
+@mixin subtitle($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin title($font-size, $color, $width) {
+  @include subtitle($font-size, $color);
+  width: $width;
+}
+
+@mixin description($font-size, $color, $letter-spacing, $width) {
+  font-size: $font-size;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  width: $width;
+}
