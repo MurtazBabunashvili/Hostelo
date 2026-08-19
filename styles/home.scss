@@ -1,0 +1,133 @@
+@import "./global";
+
+.nav__custom {
+  background-color: white;
+  font-family: $font-heading !important;
+  font-size: $font-xsmall;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav__logo {
+  margin-left: 300px;
+  margin-right: 50px;
+}
+
+.nav-link {
+  font-weight: $font-mediumbold !important;
+}
+
+.carousel-control-next-icon {
+  background-color: $nav-bookcolor;
+  width: 30px;
+  height: 30px;
+  padding: 20px 20px 20px 20px !important;
+}
+
+.nav__custom .nav-link {
+  color: black !important;
+  margin-left: 20px;
+}
+
+.nav__custom .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__custom .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__hamburger {
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.nav__hamburger i {
+  font-size: $font-large;
+  line-height: 1;
+}
+
+.nav__book {
+  background-color: $nav-bookcolor;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: $nav-bookhovercolor;
+
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  &:hover::before {
+    animation: bookNow 0.8s ease forwards;
+  }
+
+  p {
+    margin: 0;
+  }
+  i {
+    margin: 0;
+    font-size: $font-xxlarge;
+  }
+
+  p,
+  i {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes bookNow {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left; // იწყებს ანიმაციას მარცხნიდან
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+/* Hero */
+
+.hero__page {
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__page--1 {
+  background-image: url("https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-1.jpg");
+}
+
+.hero__page--2 {
+  background-image: url("https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-2.jpg");
+}
+
+.hero__page--3 {
+  background-image: url("https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-3.jpg");
+}
