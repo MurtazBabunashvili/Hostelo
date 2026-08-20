@@ -20,9 +20,13 @@
     transform-origin: left;
   }
 }
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
 .nav__custom {
   background-color: white;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
   font-size: 19px;
   position: sticky;
   top: 0;
@@ -75,6 +79,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 .nav__book::before {
   content: "";
@@ -82,10 +87,11 @@
   inset: 0;
   background-color: #d6af00;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: right;
+  z-index: -1;
 }
 .nav__book:hover::before {
-  animation: bookNowBtn 0.8s ease forwards;
+  animation: heroBtn 0.8s ease forwards;
 }
 .nav__book p {
   margin: 0;
@@ -226,9 +232,267 @@
   bottom: -10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 75%;
   height: 150px;
   background-color: white;
   box-shadow: 0px 4px 5px rgb(233, 233, 233);
   border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.booking__form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-input {
+  position: relative;
+  width: 470px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.date-input i {
+  font-size: 20px;
+  color: gray;
+}
+.date-input .date-placeholder {
+  position: absolute;
+  left: 50px;
+  color: #949393;
+  font-size: 22px;
+  pointer-events: none;
+}
+
+.booking__form__description {
+  color: gray;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.booking__form__row__date {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.guest-input {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.guest-input .guest-placeholder {
+  position: absolute;
+  left: 27px;
+  color: #7d7d7d;
+  font-size: 19px;
+  pointer-events: none;
+}
+
+.booking__search__button {
+  border: none;
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #003350;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Luxury Rooms */
+.luxury {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 130px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.luxury__column {
+  width: 48%;
+  overflow: hidden;
+}
+.luxury__column img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.luxury__title {
+  font-size: 38px;
+  color: #003350;
+  width: 700px;
+  font-weight: 700;
+}
+
+.luxury__description {
+  font-size: 19px;
+  color: #505050;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.luxury__rooms {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.luxury__rooms__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+  width: 47.5%;
+  height: 325px;
+  margin-bottom: 20px;
+}
+.luxury__rooms__col .luxury__rooms__iconwrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  width: 73px;
+  height: 73px;
+  margin-bottom: 15px;
+  transition: transform 1s ease-in;
+}
+.luxury__rooms__col .luxury__rooms__iconwrap i {
+  position: relative;
+  z-index: 2;
+  font-size: 45px;
+  color: white;
+}
+.luxury__rooms__col .luxury__rooms__iconwrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #003350;
+  border-radius: 7px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+.luxury__rooms__col .luxury__rooms__iconwrap:hover::before {
+  transform: rotate(90deg);
+  background-color: #d6af00;
+}
+.luxury__rooms__col {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.luxury__rooms__col::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #003350;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+.luxury__rooms__col:hover::before {
+  animation: bookNowBtn 0.8s ease forwards;
+}
+.luxury__rooms__col:hover h3,
+.luxury__rooms__col:hover p {
+  color: white;
+}
+
+.luxury__rooms__div--title {
+  font-size: 26px;
+  color: black;
+  width: 400px;
+  font-weight: 700;
+}
+
+.luxury__rooms__div--description {
+  font-size: 17px;
+  color: #505050;
+  letter-spacing: 0px;
+  width: 290px;
+  font-weight: 600;
+}
+
+.luxury__rooms__div--btn {
+  border: none;
+  width: 55%;
+  height: 70px;
+  border-radius: 7px;
+  background-color: #003350;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.luxury__rooms__div--btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #d6af00;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+.luxury__rooms__div--btn:hover::before {
+  animation: heroBtn 0.8s ease forwards;
+}
+
+.luxury--btn {
+  border: none;
+  width: 220px;
+  height: 65px;
+  border-radius: 8px;
+  background-color: #003350;
+  color: white;
+  font-size: 19px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.luxury--btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #d6af00;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+.luxury--btn:hover::before {
+  animation: heroBtn 0.8s ease forwards;
+}
+.luxury--btn {
+  font-weight: 700;
 }/*# sourceMappingURL=home.css.map */

@@ -14,3 +14,25 @@
   color: $font-color;
   font-size: $font-size;
 }
+
+@mixin button-animation() {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: $nav-bookhovercolor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    animation: heroBtn 0.8s ease forwards;
+  }
+}
