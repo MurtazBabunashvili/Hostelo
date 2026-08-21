@@ -1,0 +1,38 @@
+@mixin rotating-icon() {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+
+  width: 73px;
+  height: 73px;
+  margin-bottom: 15px;
+  transition: transform 1s ease-in;
+
+  i {
+    position: relative;
+    z-index: 2;
+    font-size: $font-xxlarge;
+    color: white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $nav-bookcolor;
+    border-radius: 7px;
+    transition:
+      transform 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    transform: rotate(90deg);
+    background-color: $nav-bookhovercolor;
+  }
+}

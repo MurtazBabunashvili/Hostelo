@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
@@ -24,6 +25,15 @@
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
     <link rel="stylesheet" href="../styles/home.css" />
@@ -104,7 +114,7 @@
       <div
         id="carouselExampleControls"
         class="carousel slide"
-        data-ride="carousel"
+        data-interval="false"
       >
         <div class="carousel-inner">
           <!-- !Hero bg 1-->
@@ -205,7 +215,9 @@
           </div>
 
           <div class="booking__form__row">
-            <button class="booking__search__button">Search</button>
+            <button type="button" class="booking__search__button">
+              Search
+            </button>
           </div>
         </form>
       </div>
@@ -255,20 +267,303 @@
       </div>
     </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+    <!-- !Discover -->
+    <section class="discover">
+      <div class="discover__content">
+        <span>
+          <h1 class="discover__title">
+            Discover Our Best Comfortable Luxury Rooms
+          </h1>
+          <p class="discover__description">
+            Sea or garden view: choose for yourself!
+          </p>
+        </span>
+        <button class="discover__btn">All Rooms →</button>
+      </div>
+    </section>
+
+    <!-- !Room cards-->
+    <section class="room__cards">
+      <div class="owl-carousel owl-theme">
+        <!-- !room1 -->
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-1.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Triple Double Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+        <!-- !room2 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-2.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Luxury Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+        <!-- !room3 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-3.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Modern Single Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+
+        <!-- !room4 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-4.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Classic Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+
+        <!-- !room5 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-5.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Crystal Luxury Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+
+        <!-- !room6 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-1.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Triple Double Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+
+        <!-- !room7 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-2.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Luxury Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+        <!-- !room8 -->
+
+        <span class="room__card">
+          <div class="room__card--imgwrapper">
+            <img
+              src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/small-hotella-3.jpg"
+            />
+          </div>
+          <div class="room__card__content">
+            <i class="fa-solid fa-bed"></i>
+            <h2 class="room__card__title">Modern Single Room</h2>
+            <button class="room__card__btn">Examine Room →</button>
+          </div>
+        </span>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2 class="videos__title">For A Holiday Beyond Your Expectations</h2>
+      <p class="videos__description">
+        We make sure you spend your holiday in the best luxury rooms and with
+        the best amenities.
+      </p>
+
+      <section class="video-banner">
+        <div class="video-banner__side video-banner__side--left">
+          <img
+            src="https://as1.ftcdn.net/jpg/01/36/06/88/1000_F_136068892_E83kY1dlnh2djHpftwQroQTHp8Ax1Uh6.webp"
+            alt=""
+          />
+        </div>
+
+        <div class="video-banner__center">
+          <img
+            src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/hostello-video-banner-1.jpg"
+            alt=""
+          />
+
+          <button class="video-banner__play">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+
+        <div class="video-banner__side video-banner__side--right">
+          <img
+            src="https://as2.ftcdn.net/jpg/02/42/96/81/1000_F_242968159_djvfaYCitoLHZG8IYHPVdgrxOF6qjzRD.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+    </section>
+
+    <!-- !Amenities -->
+    <section class="amenities">
+      <h2 class="amenities__title">Discover The Amenities At Our Hotel</h2>
+      <p class="amenities__description">
+        Excellent accommodation service with excellent spaces.
+      </p>
+
+      <div class="amenities__grid">
+        <!-- !card 1-->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+          </div>
+          <h3 class="amenities__card__title">Airport Transfer</h3>
+          <p class="amenities__card__description">
+            We welcome all our customers who will stay in our hotel with VIP
+            vehicles free of charge and bring them to our hotel.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card2 -->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3 class="amenities__card__title">Best Accommodation</h3>
+          <p class="amenities__card__description">
+            We provide the best hotel service with our affordable prices and
+            high quality accommodation services.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card3 -->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-martini-glass"></i>
+          </div>
+          <h3 class="amenities__card__title">Best Bellboy</h3>
+          <p class="amenities__card__description">
+            Our bellboy teams greet our customers arriving at our hotel and
+            relieve you of your burdens.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card4-->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-bell-concierge"></i>
+          </div>
+          <h3 class="amenities__card__title">Reception</h3>
+          <p class="amenities__card__description">
+            We provide economical and reliable Railway Transportation services
+            with our expert team and strong vehicle fleet.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card5-->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <h3 class="amenities__card__title">Most Luxurious Rooms</h3>
+          <p class="amenities__card__description">
+            You will enjoy every moment with the most luxurious modern rooms in
+            the nature close to the city center.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card6-->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-bowl-food"></i>
+          </div>
+          <h3 class="amenities__card__title">Best Foods</h3>
+          <p class="amenities__card__description">
+            You will enjoy morning, lunch, dinner and wonderful tastes with our
+            special menu options.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card7-->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </div>
+          <h3 class="amenities__card__title">Special Minibars</h3>
+          <p class="amenities__card__description">
+            You will have a pleasant holiday with our specially prepared minibar
+            area in all our rooms.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+        <!-- !card8-->
+        <div class="amenities__card">
+          <div class="amenities__iconwrap">
+            <i class="fa-solid fa-water-ladder"></i>
+          </div>
+          <h3 class="amenities__card__title">Large Swimming Pool</h3>
+          <p class="amenities__card__description">
+            You will not be able to get enough of your holiday with its large
+            adult swimming pool and children's pools.
+          </p>
+          <button class="amenities__card__btn">Learn More →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Script section-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 4,
+          loop: false,
+          nav: false,
+          dots: true,
+          autoplay: false,
+          dotsEach: 1,
+          margin: 20,
+        });
+      });
+    </script>
   </body>
 </html>

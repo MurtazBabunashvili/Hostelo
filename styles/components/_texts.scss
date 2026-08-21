@@ -9,8 +9,12 @@
 }
 
 @mixin description($font-size, $color, $letter-spacing, $width) {
+  @include description-nowidth($font-size, $color, $letter-spacing);
+  width: $width;
+}
+
+@mixin description-nowidth($font-size, $color, $letter-spacing) {
   font-size: $font-size;
   color: $color;
   letter-spacing: $letter-spacing;
-  width: $width;
 }

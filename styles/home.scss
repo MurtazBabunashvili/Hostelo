@@ -328,69 +328,10 @@ body {
   margin-bottom: 20px;
 
   .luxury__rooms__iconwrap {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 7px;
-
-    width: 73px;
-    height: 73px;
-    margin-bottom: 15px;
-    transition: transform 1s ease-in;
-
-    i {
-      position: relative;
-      z-index: 2;
-      font-size: $font-xxlarge;
-      color: white;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: $nav-bookcolor;
-      border-radius: 7px;
-      transition:
-        transform 0.3s ease-in-out,
-        background-color 0.3s ease-in-out;
-      z-index: 1;
-    }
-
-    &:hover::before {
-      transform: rotate(90deg);
-      background-color: $nav-bookhovercolor;
-    }
+    @include rotating-icon();
   }
 
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background-color: $nav-bookcolor;
-
-    transform: scaleX(0);
-    transform-origin: right;
-    z-index: -1;
-  }
-
-  &:hover::before {
-    animation: bookNowBtn 0.8s ease forwards;
-  }
-  &:hover {
-    h3,
-    p {
-      color: white;
-    }
-  }
+  @include curtain-div();
 }
 
 .luxury__rooms__div--title {
@@ -413,4 +354,316 @@ body {
   @include hero-button(220px, 65px, 8px, $nav-bookcolor, white, $font-xxxsmall);
   @include button-animation();
   font-weight: $font-xxmediumbold;
+}
+
+/* Discover */
+
+.discover {
+  margin-top: 50px;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  background-color: $nav-bookcolor;
+  z-index: 1;
+  position: relative;
+}
+
+.discover__content {
+  margin-top: 40px;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.discover__title {
+  @include title($font-xlarge, white, 100%);
+  font-weight: $font-xxmediumbold;
+}
+
+.discover__description {
+  @include description($font-xxxsmall, white, 0px, 100%);
+}
+
+.discover__btn {
+  @include hero-button(180px, 70px, 6px, transparent, white, $font-xxxsmall);
+  border: 2px solid white;
+  font-weight: $font-xxmediumbold;
+  @include button-animation();
+}
+
+/* Room cards */
+.room__cards {
+  position: relative;
+  width: 75%;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.room__card {
+  position: relative;
+  display: block;
+  height: 470px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.room__card--imgwrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.room__card__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35%;
+  z-index: 2;
+  transition: height 0.4s ease;
+
+  background: white;
+  box-shadow: 0px -10px 1px rgba(233, 233, 233, 0.7);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  i {
+    font-size: $font-xxlarge;
+    margin-top: 25px;
+  }
+}
+
+.room__card__title {
+  @include subtitle($font-xxmedium, black);
+  font-weight: $font-xxmediumbold;
+}
+
+.room__card__btn {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 15px;
+  @include hero-button(70%, 70px, 4px, $nav-bookcolor, white, $font-xxxsmall);
+  font-weight: $font-xxmediumbold;
+  @include button-animation();
+}
+
+.room__card:hover .room__card__content {
+  height: 45%;
+}
+
+.room__card:hover .room__card__btn {
+  opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  margin: 0 4px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background: #365d70;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.owl-carousel {
+  overflow: hidden;
+}
+.owl-carousel,
+.owl-carousel * {
+  scroll-behavior: auto !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #c88b00;
+  width: 23px;
+  height: 23px;
+}
+
+/* Videos */
+
+.videos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.videos__title {
+  @include subtitle($font-xlarge, $nav-bookcolor);
+  font-weight: $font-xxmediumbold;
+}
+
+.videos__description {
+  align-self: center;
+  @include description-nowidth($font-xxxsmall, $nav-bgcolor, 0px);
+}
+
+.video-banner {
+  width: 75%;
+  height: 450px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.video-banner__side {
+  position: absolute;
+  width: 30%;
+  height: 420px;
+
+  overflow: hidden;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-banner__side--left {
+  left: 0;
+
+  animation: leftImageMove 6s ease-in-out infinite;
+}
+
+.video-banner__side--right {
+  right: 0;
+
+  animation: rightImageMove 6s ease-in-out infinite;
+}
+
+.video-banner__center {
+  position: relative;
+  z-index: 2;
+
+  width: 50%;
+  height: 450px;
+
+  overflow: hidden;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-banner__play {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 140px;
+  height: 140px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: $nav-bookcolor;
+  transition: background-color 0.4s ease-in-out;
+  &:hover {
+    background-color: $nav-bookhovercolor;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  i {
+    color: white;
+    font-size: 40px;
+    margin-left: 6px;
+  }
+}
+
+/* Amenities */
+
+.amenities {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+}
+.amenities__title {
+  @include subtitle($font-xlarge, $nav-bookcolor);
+  font-weight: $font-xbold;
+}
+.amenities__description {
+  @include description-nowidth($font-xxxsmall, $nav-bgcolor, 0px);
+}
+
+.amenities__grid {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.amenities__card {
+  @include curtain-div();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  height: 340px;
+  border-radius: 8px;
+}
+
+.amenities__iconwrap {
+  @include rotating-icon();
+}
+
+.amenities__card__title {
+  @include subtitle($font-xxmedium, black);
+  font-weight: $font-xbold;
+}
+
+.amenities__card__description {
+  @include description($font-xxsmall, $nav-bgcolor, 0px, 90%);
+  line-height: 1.1;
+  text-align: center;
+}
+
+.amenities__card__btn {
+  @include hero-button(65%, 70px, 8px, $nav-bookcolor, white, $font-xxxsmall);
+  @include button-animation();
+  font-weight: $font-xbold;
 }

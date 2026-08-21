@@ -1,0 +1,27 @@
+@mixin curtain-div() {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: $nav-bookcolor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    animation: bookNowBtn 0.8s ease forwards;
+  }
+  &:hover {
+    h3,
+    p {
+      color: white;
+    }
+  }
+}
