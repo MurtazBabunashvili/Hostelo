@@ -653,7 +653,7 @@ body {
 
 .amenities__card__title {
   @include subtitle($font-xxmedium, black);
-  font-weight: $font-xbold;
+  font-weight: $font-xxbold;
 }
 
 .amenities__card__description {
@@ -665,5 +665,230 @@ body {
 .amenities__card__btn {
   @include hero-button(65%, 70px, 8px, $nav-bookcolor, white, $font-xxxsmall);
   @include button-animation();
+  font-weight: $font-xxbold;
+}
+
+.amenities__btn {
+  margin-top: 30px;
+  @include hero-button(200px, 70px, 8px, $nav-bookcolor, white, $font-xxxsmall);
+  @include button-animation();
+  font-weight: $font-xxbold;
+  margin-bottom: 40px;
+}
+
+/* Foods */
+
+.foods {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $light-gray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.foods__content {
+  max-width: 35%;
+}
+
+.foods__title {
+  @include subtitle($font-xlarge, $nav-bookcolor);
+  font-weight: $font-xxbold;
+}
+
+.foods__description {
+  @include description($font-xxxsmall, $nav-bgcolor, 0px, 97%);
+}
+
+.menu {
+  width: 100%;
+  max-width: 700px;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 10px 0 8px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px dashed #bbb;
+}
+
+.menu__info {
+  flex: 1;
+
+  h3 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #111;
+  }
+
+  p {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 15px;
+    color: #888;
+    line-height: 1.3;
+  }
+}
+
+.menu__price {
+  margin-left: 30px;
+
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 500;
+  color: #111;
+
+  white-space: nowrap;
+}
+
+.foods__btn {
+  @include hero-button(220px, 70px, 5px, $nav-bookcolor, white, $font-xxxsmall);
+  @include button-animation();
   font-weight: $font-xbold;
+}
+
+.foods__imgwrapper {
+  width: 35%;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
+
+/* Reviews */
+
+.reviews {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+
+  i {
+    font-size: $font-xxxlarge;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: $nav-bookhovercolor;
+    }
+  }
+}
+
+.reviews__title {
+  @include subtitle($font-xlarge, $nav-bookcolor);
+  font-weight: $font-xxbold;
+}
+
+.reviews__description {
+  @include description-nowidth($font-xxxsmall, $nav-bgcolor, 0px);
+}
+
+.reviews__carousel {
+  width: 72%;
+  margin: 40px auto 0;
+}
+
+.reviews__card {
+  text-align: center;
+}
+
+.reviews__card__description {
+  margin: 0 auto;
+  @include description($font-xxxsmall, $nav-bgcolor, 0px, 90%);
+}
+.reviews__card__author {
+  @include subtitle($font-medium, black);
+  font-weight: $font-xbold;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.reviews__photo {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  z-index: 2;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.reviews__topleft {
+  top: 29%;
+  left: 25%;
+}
+
+.reviews__topright {
+  top: 29%;
+  right: 28%;
+}
+.reviews__topleft,
+.reviews__topright {
+  animation: leftImageMove 2s infinite ease-in-out;
+}
+
+.reviews__bottomleft {
+  bottom: 5%;
+  left: 30%;
+}
+
+.reviews__bottomright {
+  bottom: 5%;
+  right: 30%;
+}
+
+.reviews__bottomleft,
+.reviews__bottomright {
+  animation: rightImageMove 2s infinite ease-in-out;
+}
+
+.reviews__card {
+  text-align: center;
+  border: 2px solid $medium-gray;
+  border-radius: 3px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: $font-nav;
+    font-size: 150px;
+    line-height: 1;
+
+    color: $nav-bgcolor;
+    opacity: 0.17;
+
+    z-index: -1;
+  }
 }
