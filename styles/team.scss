@@ -1,0 +1,14 @@
+@import "./global";
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.team__title {
+  @include subtitle($font-xlarge, $nav-bookcolor);
+  font-weight: $font-xxbold;
+}
