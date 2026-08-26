@@ -1,0 +1,53 @@
+@import "./global";
+
+.about__hero {
+  width: 100%;
+  aspect-ratio: 1920 / 350;
+
+  background-image:
+    linear-gradient(rgba(0, 52, 76, 0.85), rgba(0, 52, 76, 0.85)),
+    url("https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/11/01-headersa.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  h1 {
+    margin: 0 0 15px;
+    font-size: 42px;
+    font-weight: 600;
+  }
+}
+
+.about__hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__hero__navigation {
+  font-size: $font-xxxsmall;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 15px;
+  }
+
+  span {
+    color: white;
+  }
+}

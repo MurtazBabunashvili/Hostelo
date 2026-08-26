@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/about_us.css" />
+  </head>
+  <body>
+    <!-- !Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav__custom">
+      <a class="navbar-brand nav__logo" href="#">
+        <img src="../images/logo.png" width="100%" height="65" alt="" />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./about_us.html">About Us</a>
+              <a class="dropdown-item" href="#">Comments</a>
+              <a class="dropdown-item" href="#"> Our Team</a>
+              <a class="dropdown-item" href="#">Foods & Bars</a>
+              <a class="dropdown-item" href="#"> Amenities</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Room List<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Rooms Available <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Bookings List <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Blog <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Contact <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item nav__hamburger">
+            <i class="bi bi-list"></i>
+          </li>
+          <li class="nav-item nav__book text-white pl-3 pr-3 pt-1 ml-3">
+            <i class="fi fi-rr-calendar"></i>
+            <b><p>Book Now +</p></b>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- !Hero -->
+    <section class="about__hero">
+      <div class="about__hero__content">
+        <h1>About Us</h1>
+
+        <div class="about__hero__navigation">
+          <a href="./home.html">Home</a>
+          <i class="bi bi-chevron-right"></i>
+          <span>About Us</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Luxury Rooms -->
+    <section class="luxury" style="margin-top: 30px">
+      <div class="luxury__column">
+        <img
+          src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/hostello-about-1.jpg"
+        />
+      </div>
+      <div class="luxury__column">
+        <h2 class="luxury__title">Luxury Rooms That Will Blow Your Mind</h2>
+        <p class="luxury__description">
+          You will enjoy every moment with magnificent luxury rooms in nature,
+          between mountains and streams. We offer a peaceful environment to our
+          guests with our unique architecture that integrates with nature.
+        </p>
+
+        <div class="luxury__rooms">
+          <span class="luxury__rooms__col">
+            <div class="luxury__rooms__iconwrap">
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <h3 class="luxury__rooms__div--title">Modern Luxury Rooms</h3>
+            <p class="luxury__rooms__div--description">
+              You can choose any sea or land view rooms in our hotel.
+            </p>
+            <button class="luxury__rooms__div--btn">Rooms List +</button>
+          </span>
+          <span class="luxury__rooms__col">
+            <div class="luxury__rooms__iconwrap">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3 class="luxury__rooms__div--title">Stylish And Classy</h3>
+            <p class="luxury__rooms__div--description">
+              A vacation with the best food and the best view in the lap of
+              nature.
+            </p>
+            <button class="luxury__rooms__div--btn">
+              Rooms Availability +
+            </button>
+          </span>
+        </div>
+        <button class="luxury--btn">Get To Know Us →</button>
+      </div>
+    </section>
+
+    <!-- !Reviews -->
+    <section class="reviews">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <h2 class="reviews__title">What Are Our Customers Saying ?</h2>
+      <p class="reviews__description">Opinions from our happy customers.</p>
+
+      <div class="reviews__photo reviews__topleft">
+        <img
+          src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-5.png"
+        />
+      </div>
+      <div class="reviews__photo reviews__topright">
+        <img
+          src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-2.png"
+        />
+      </div>
+      <div class="reviews__photo reviews__bottomleft">
+        <img
+          src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-4.png"
+        />
+      </div>
+      <div class="reviews__photo reviews__bottomright">
+        <img
+          src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-1.png"
+        />
+      </div>
+
+      <div class="reviews__carousel owl-carousel owl-theme">
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "Quiet, calm, peaceful and isolated environment. It's a nice place
+            to relax. The staff is very caring, I highly recommend it."
+          </p>
+          <h3 class="reviews__card__author">Adam</h3>
+        </div>
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "A very nice place to spend time with the kids and relax. The pool
+            and its surroundings are clean. Our kids loved it too."
+          </p>
+          <h3 class="reviews__card__author">Elizabeth</h3>
+        </div>
+
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "A calm facility in nature, clean air, caring staff. I plan to go
+            again before the season ends. Thank you for everything."
+          </p>
+
+          <h3 class="reviews__card__author">Robert</h3>
+        </div>
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "Friendly staff and wonderful hotel. It was a wonderful holiday that
+            we thoroughly enjoyed. Everything was great."
+          </p>
+          <h3 class="reviews__card__author">Cristian</h3>
+        </div>
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "Quiet, calm, peaceful and isolated environment. It's a nice place
+            to relax. The staff is very caring, I highly recommend it."
+          </p>
+          <h3 class="reviews__card__author">Adam</h3>
+        </div>
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "A very nice place to spend time with the kids and relax. The pool
+            and its surroundings are clean. Our kids loved it too."
+          </p>
+          <h3 class="reviews__card__author">Elizabeth</h3>
+        </div>
+
+        <div class="reviews__card">
+          <p class="reviews__card__description">
+            "A calm facility in nature, clean air, caring staff. I plan to go
+            again before the season ends. Thank you for everything."
+          </p>
+
+          <h3 class="reviews__card__author">Robert</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Footer -->
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="footer__column">
+          <div class="footer__imgwrapper">
+            <img src="../images/logo-white.png" />
+          </div>
+          <p class="footer__description">
+            We guarantee that you will have a peaceful and enjoyable holiday
+            away from stress with our uniquely designed rooms in our hotel. Each
+            room is large enough to comfortably enjoy breakfast or dinner in
+            your room or on your private balcony, if you prefer not to dine on
+            one of our three shared terraces or dining rooms. If you want to get
+            away from the stress of daily life and have a pleasant holiday, book
+            your room now.
+          </p>
+        </div>
+        <div class="footer__column">
+          <div class="footer__customer__service">
+            <i class="fa-solid fa-phone"></i>
+            <div class="footer__customer__service--info">
+              <p class="footer__customer__service__title">Customer Service</p>
+              <p class="footer__customer__service__number">+123 456 78 90 01</p>
+            </div>
+          </div>
+          <p class="footer__customer__service__description">
+            We are proud to provide the best service for you. We are trying to
+            host you in the best way with our understanding of quality service,
+            experienced and friendly staff.
+          </p>
+          <div class="footer__customer__service--icons">
+            <div class="footer__icon__wrapper">
+              <i class="bi bi-facebook"></i>
+            </div>
+            <div class="footer__icon__wrapper">
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div class="footer__icon__wrapper">
+              <i class="bi bi-twitter-x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-bottom">
+        <div class="footer-bottom__links">
+          <a href="#">About Us</a>
+          <a href="#">Rooms List</a>
+          <a href="#">Bookings List</a>
+          <a href="#">Search Room</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-bottom__copyright">
+          <span>© 2026 Hostello - All Rights Reserved.</span>
+        </div>
+      </footer>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 4,
+          loop: false,
+          nav: false,
+          dots: true,
+          autoplay: false,
+          dotsEach: 1,
+          margin: 20,
+        });
+      });
+    </script>
+  </body>
+</html>
