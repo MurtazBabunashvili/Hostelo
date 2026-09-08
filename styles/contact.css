@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@keyframes bookNowBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+@keyframes heroBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+@keyframes leftImageMove {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes rightImageMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 0 90px;
+  background-color: white;
+}
+
+.contact__title {
+  font-size: 38px;
+  color: #003350;
+  font-weight: 1000;
+  margin-bottom: 12px;
+}
+
+.contact__description {
+  font-size: 19px;
+  color: #3a3a3a;
+  letter-spacing: 0px;
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.contact__divider {
+  width: 80px;
+  height: 3px;
+  background-color: #b99700;
+  border-radius: 2px;
+  margin-bottom: 60px;
+}
+
+.contact__container {
+  width: 72%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.contact__form-col {
+  flex: 1;
+  max-width: 580px;
+}
+
+.contact__form-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #003350;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: #fafaf8;
+  font-size: 15px;
+  font-family: "Lora", serif;
+  color: #3a3a3a;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.contact__input::-moz-placeholder, .contact__textarea::-moz-placeholder {
+  color: #999;
+  font-size: 14.5px;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+  color: #999;
+  font-size: 14.5px;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  border-color: #003350;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(0, 51, 80, 0.1);
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact__btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  background-color: #003350;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.contact__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #b99700;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+
+.contact__btn:hover::before {
+  animation: heroBtn 0.8s ease forwards;
+}
+
+.contact__btn i {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.contact__btn:hover i {
+  transform: translateX(3px);
+}
+
+.contact__image-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 480px;
+}
+
+.contact__image-circle {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgb(240, 239, 234), #e8e3d8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.contact__image {
+  position: relative;
+  max-width: 100%;
+  max-height: 520px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 2;
+  margin-bottom: 20px;
+}

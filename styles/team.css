@@ -42,10 +42,126 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 60px 0;
 }
 
 .team__title {
   font-size: 38px;
   color: #003350;
   font-weight: 1000;
+}
+
+.team__description {
+  font-size: 22px;
+  color: #3a3a3a;
+  letter-spacing: 0px;
+}
+
+.team__grid {
+  width: 72%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.team__card {
+  background-color: rgb(250, 250, 246);
+  border-radius: 12px;
+  height: 550px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.team__card--imgwrapper {
+  overflow: hidden;
+  position: absolute;
+  inset: 0;
+}
+.team__card--imgwrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.team__card__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 25px 30px;
+  text-align: left;
+  z-index: 2;
+  background: rgb(250, 250, 246);
+  box-shadow: 0px -10px 1px rgba(233, 233, 233, 0.7);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: padding-bottom 0.4s ease;
+}
+
+.team__card:hover .team__card__content {
+  padding-bottom: 60px;
+}
+
+.team__card__btn {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: opacity 0.3s ease, max-height 0.4s ease, margin-top 0.4s ease;
+  border: none;
+  width: 100%;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #003350;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.team__card__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #b99700;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+}
+.team__card__btn:hover::before {
+  animation: heroBtn 0.8s ease forwards;
+}
+
+.team__card:hover .team__card__btn {
+  opacity: 1;
+  max-height: 46px;
+  margin-top: 20px;
+}
+
+.team__card__name {
+  font-size: 28px;
+  margin: 0 0 5px;
+  color: #3a3a3a;
+}
+
+.team__card__position {
+  font-size: 18px;
+  margin: 0;
+  color: #3a3a3a;
+}
+
+.team__card__icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 22px;
+}
+.team__card__icons i {
+  font-size: 24px;
+  color: #b9a16b;
 }/*# sourceMappingURL=team.css.map */
