@@ -6,6 +6,14 @@
   background-color: white;
   display: flex;
   justify-content: center;
+  font-family: $font-normal;
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
 }
 
 .blog-container {
@@ -59,7 +67,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     font-size: 14px;
-    font-family: $font-body;
+    font-family: inherit;
     color: $nav-bgcolor;
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -299,7 +307,7 @@
   border-radius: 6px;
   background-color: #fafaf8;
   font-size: 15px;
-  font-family: $font-body;
+  font-family: inherit;
   color: $nav-bgcolor;
   outline: none;
   transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;

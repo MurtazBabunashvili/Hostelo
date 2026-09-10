@@ -42,7 +42,7 @@
     <!-- !Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light nav__custom">
       <a class="navbar-brand nav__logo" href="#">
-        <img src="../images/logo.png" width="100%" height="65" alt="" />
+        <img src="../images/logo.png" width="100%" height="65" alt="ჰოსტელო" />
       </a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,13 +78,8 @@
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="./room_availability.html"
               >Rooms Available <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Bookings List <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
@@ -100,9 +95,11 @@
           <li class="nav-item nav__hamburger">
             <i class="bi bi-list"></i>
           </li>
-          <li class="nav-item nav__book text-white pl-3 pr-3 pt-1 ml-3">
-            <i class="fi fi-rr-calendar"></i>
-            <b><p>Book Now +</p></b>
+          <li class="nav-item nav__book ml-3">
+            <a href="./room_availability.html">
+              <i class="bi bi-calendar4-week"></i>
+              <span>Book Now +</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -126,6 +123,7 @@
       <div class="luxury__column">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/hostello-about-1.jpg"
+          alt="ლუქს ნომერი"
         />
       </div>
       <div class="luxury__column">
@@ -165,6 +163,157 @@
       </div>
     </section>
 
+    <section class="about-features py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="about-features__title">Why Choose Hostelo</h2>
+          <p class="about-features__subtitle">
+            Experience world-class luxury, comfort, and hospitality.
+          </p>
+          <div class="about-features__divider mx-auto"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+              <div class="about-card__icon mb-3">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4 class="card-title about-card__title">Safe & Secure</h4>
+              <p class="card-text about-card__text">
+                Your safety and comfort are guaranteed with 24/7 security and certified hygiene standards.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+              <div class="about-card__icon mb-3">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h4 class="card-title about-card__title">Prime Location</h4>
+              <p class="card-text about-card__text">
+                Situated in the heart of scenic nature with quick and easy access to top city attractions.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+              <div class="about-card__icon mb-3">
+                <i class="bi bi-award"></i>
+              </div>
+              <h4 class="card-title about-card__title">5-Star Service</h4>
+              <p class="card-text about-card__text">
+                Personalized hospitality crafted to make every moment of your vacation unforgettable.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+              <div class="about-card__icon mb-3">
+                <i class="bi bi-cup-hot"></i>
+              </div>
+              <h4 class="card-title about-card__title">Gourmet Dining</h4>
+              <p class="card-text about-card__text">
+                Exquisite world cuisine prepared by award-winning chefs using organic, fresh ingredients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-faq py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="about-faq__title">Frequently Asked Questions</h2>
+          <p class="about-faq__subtitle">
+            Everything you need to know about your stay at Hostelo.
+          </p>
+          <div class="about-features__divider mx-auto"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="accordion" id="aboutFaqAccordion">
+              <div class="card border-0 mb-3 shadow-sm faq-card">
+                <div class="card-header bg-white p-0" id="faqHeading1">
+                  <button
+                    class="btn btn-block text-left faq-btn d-flex justify-content-between align-items-center p-3"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faqCollapse1"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse1"
+                  >
+                    <span>What are the check-in and check-out times?</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+                <div
+                  id="faqCollapse1"
+                  class="collapse show"
+                  aria-labelledby="faqHeading1"
+                  data-parent="#aboutFaqAccordion"
+                >
+                  <div class="card-body faq-body px-3 py-3">
+                    Check-in begins at 2:00 PM and check-out is until 12:00 PM. Early check-in and late check-out can be requested based on room availability.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 mb-3 shadow-sm faq-card">
+                <div class="card-header bg-white p-0" id="faqHeading2">
+                  <button
+                    class="btn btn-block text-left faq-btn collapsed d-flex justify-content-between align-items-center p-3"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faqCollapse2"
+                    aria-expanded="false"
+                    aria-controls="faqCollapse2"
+                  >
+                    <span>Is breakfast included in the room price?</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+                <div
+                  id="faqCollapse2"
+                  class="collapse"
+                  aria-labelledby="faqHeading2"
+                  data-parent="#aboutFaqAccordion"
+                >
+                  <div class="card-body faq-body px-3 py-3">
+                    Yes, a complimentary gourmet buffet breakfast is included for all guests in our main restaurant.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 mb-3 shadow-sm faq-card">
+                <div class="card-header bg-white p-0" id="faqHeading3">
+                  <button
+                    class="btn btn-block text-left faq-btn collapsed d-flex justify-content-between align-items-center p-3"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faqCollapse3"
+                    aria-expanded="false"
+                    aria-controls="faqCollapse3"
+                  >
+                    <span>Do you offer airport transfer services?</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                </div>
+                <div
+                  id="faqCollapse3"
+                  class="collapse"
+                  aria-labelledby="faqHeading3"
+                  data-parent="#aboutFaqAccordion"
+                >
+                  <div class="card-body faq-body px-3 py-3">
+                    Yes, we offer complimentary VIP airport transfers for our guests upon prior reservation.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- !Reviews -->
     <section class="reviews">
       <i class="fa-solid fa-thumbs-up"></i>
@@ -174,21 +323,25 @@
       <div class="reviews__photo reviews__topleft">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-5.png"
+          alt="სტუმრის შეფასება"
         />
       </div>
       <div class="reviews__photo reviews__topright">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-2.png"
+          alt="სტუმრის შეფასება"
         />
       </div>
       <div class="reviews__photo reviews__bottomleft">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-4.png"
+          alt="სტუმრის შეფასება"
         />
       </div>
       <div class="reviews__photo reviews__bottomright">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-1.png"
+          alt="სტუმრის შეფასება"
         />
       </div>
 
@@ -254,7 +407,7 @@
       <div class="footer__row">
         <div class="footer__column">
           <div class="footer__imgwrapper">
-            <img src="../images/logo-white.png" />
+            <img src="../images/logo-white.png" alt="ჰოსტელო" />
           </div>
           <p class="footer__description">
             We guarantee that you will have a peaceful and enjoyable holiday
@@ -294,10 +447,10 @@
       </div>
       <footer class="footer-bottom">
         <div class="footer-bottom__links">
-          <a href="#">About Us</a>
+          <a href="./about_us.html">About Us</a>
           <a href="./room_list.html">Rooms List</a>
           <a href="#">Bookings List</a>
-          <a href="#">Search Room</a>
+          <a href="./room_availability.html">Search Room</a>
           <a href="#">Terms and Conditions</a>
           <a href="./contact.html">Contact</a>
         </div>

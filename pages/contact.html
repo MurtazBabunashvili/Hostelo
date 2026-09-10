@@ -41,7 +41,7 @@
     <!-- !Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light nav__custom">
       <a class="navbar-brand nav__logo" href="#">
-        <img src="../images/logo.png" width="100%" height="65" alt="" />
+        <img src="../images/logo.png" width="100%" height="65" alt="ჰოსტელო" />
       </a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -77,13 +77,8 @@
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="./room_availability.html"
               >Rooms Available <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Bookings List <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
@@ -99,9 +94,11 @@
           <li class="nav-item nav__hamburger">
             <i class="bi bi-list"></i>
           </li>
-          <li class="nav-item nav__book text-white pl-3 pr-3 pt-1 ml-3">
-            <i class="fi fi-rr-calendar"></i>
-            <b><p>Book Now +</p></b>
+          <li class="nav-item nav__book ml-3">
+            <a href="./room_availability.html">
+              <i class="bi bi-calendar4-week"></i>
+              <span>Book Now +</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -120,6 +117,65 @@
       </div>
     </section>
 
+    <section class="contact-info py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm contact-info-card p-4">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <div class="contact-info-card__icon mb-3">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <h5 class="card-title contact-info-card__title">Address</h5>
+                <p class="card-text contact-info-card__text">
+                  Rustaveli Ave 42, Tbilisi, Georgia
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm contact-info-card p-4">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <div class="contact-info-card__icon mb-3">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <h5 class="card-title contact-info-card__title">Phone</h5>
+                <p class="card-text contact-info-card__text">
+                  +1 (414) 312-4433<br />+995 32 212 3456
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm contact-info-card p-4">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <div class="contact-info-card__icon mb-3">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <h5 class="card-title contact-info-card__title">Email</h5>
+                <p class="card-text contact-info-card__text">
+                  info@hostelo.com<br />booking@hostelo.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm contact-info-card p-4">
+              <div class="card-body p-0 d-flex flex-column align-items-center">
+                <div class="contact-info-card__icon mb-3">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <h5 class="card-title contact-info-card__title">Working Hours</h5>
+                <p class="card-text contact-info-card__text">
+                  Front Desk: 24/7<br />Support: Mon - Sun
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="contact">
       <h1 class="contact__title">Get In Touch</h1>
       <p class="contact__description">
@@ -134,33 +190,51 @@
           <h2 class="contact__form-title">Drop Us A Message</h2>
           <form class="contact__form">
             <div class="contact__form-row">
-              <input
-                type="text"
-                class="contact__input"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                class="contact__input"
-                placeholder="example@gmail.com"
-                required
-              />
+              <div class="contact__form-group">
+                <label for="contact-name" class="contact__label">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  class="contact__input"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="contact__form-group">
+                <label for="contact-email" class="contact__label">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  class="contact__input"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
             </div>
             <div class="contact__form-row">
-              <input
-                type="tel"
-                class="contact__input"
-                placeholder="+1 (414) 312-4433"
-              />
-              <input
-                type="text"
-                class="contact__input"
-                placeholder="Subject"
-              />
+              <div class="contact__form-group">
+                <label for="contact-phone" class="contact__label">Phone</label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  class="contact__input"
+                  placeholder="+1 (414) 312-4433"
+                />
+              </div>
+              <div class="contact__form-group">
+                <label for="contact-subject" class="contact__label">Subject</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  class="contact__input"
+                  placeholder="Subject"
+                />
+              </div>
             </div>
             <div class="contact__form-group">
+              <label for="contact-message" class="contact__label">Message</label>
               <textarea
+                id="contact-message"
                 class="contact__textarea"
                 placeholder="Your message here"
                 rows="6"
@@ -178,7 +252,7 @@
             <div class="contact__image-circle"></div>
             <img
               src="https://hotelo.mhrtheme.com/wp-content/uploads/2024/09/contact-img.png"
-              alt="Contact Us"
+              alt="კონსულტანტი"
               class="contact__image"
             />
           </div>
@@ -191,7 +265,7 @@
       <div class="footer__row">
         <div class="footer__column">
           <div class="footer__imgwrapper">
-            <img src="../images/logo-white.png" />
+            <img src="../images/logo-white.png" alt="ჰოსტელო" />
           </div>
           <p class="footer__description">
             We guarantee that you will have a peaceful and enjoyable holiday
@@ -231,10 +305,10 @@
       </div>
       <footer class="footer-bottom">
         <div class="footer-bottom__links">
-          <a href="#">About Us</a>
+          <a href="./about_us.html">About Us</a>
           <a href="./room_list.html">Rooms List</a>
           <a href="#">Bookings List</a>
-          <a href="#">Search Room</a>
+          <a href="./room_availability.html">Search Room</a>
           <a href="#">Terms and Conditions</a>
           <a href="./contact.html">Contact</a>
         </div>

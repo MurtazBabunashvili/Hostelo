@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 @keyframes bookNowBtn {
   0% {
     transform: scaleX(0);
@@ -42,6 +43,13 @@
   background-color: white;
   display: flex;
   justify-content: center;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+.blog-section button,
+.blog-section input,
+.blog-section select,
+.blog-section textarea {
+  font-family: inherit;
 }
 
 .blog-container {
@@ -96,7 +104,7 @@
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   font-size: 14px;
-  font-family: "Lora", serif;
+  font-family: inherit;
   color: #3a3a3a;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -341,7 +349,7 @@
   border-radius: 6px;
   background-color: #fafaf8;
   font-size: 15px;
-  font-family: "Lora", serif;
+  font-family: inherit;
   color: #3a3a3a;
   outline: none;
   transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
