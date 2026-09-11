@@ -1212,3 +1212,366 @@ body {
   border-top: 1px solid #f0f0f0;
 }
 
+@media (min-width: 1440px) {
+  .hero__content {
+    left: 12%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .hero__content {
+    left: 8%;
+  }
+  .amenities__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  .foods {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  
+  label.navbar-toggler {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  
+  .nav__custom .navbar-collapse {
+    display: none !important;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+  }
+
+  
+  .nav-toggle-checkbox:checked ~ .navbar-collapse {
+    display: block !important;
+  }
+  .nav__custom .nav-link {
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%;
+  }
+  .nav__custom .nav-item {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .nav__custom .dropdown-menu {
+    border: none;
+    background: #f8f9fa;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    box-shadow: none;
+  }
+  .nav__book {
+    width: 100%;
+    margin-top: 15px !important;
+  }
+  .nav__book a {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  
+  .booking {
+    position: static;
+    transform: none;
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+  }
+  .booking__form {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  .booking__form__row {
+    width: 100%;
+  }
+  .booking__form__row__date {
+    width: 100%;
+  }
+  .booking__search__button {
+    width: 100%;
+    height: 52px;
+  }
+
+  
+  .luxury {
+    flex-direction: column;
+    margin: 40px auto 40px;
+    gap: 30px;
+  }
+  .luxury__column {
+    width: 100%;
+  }
+  .luxury__column img {
+    max-height: 400px;
+  }
+
+  
+  .room__cards {
+    margin: 30px auto 50px;
+  }
+
+  
+  .video-banner {
+    height: 380px;
+  }
+  .video-banner__side {
+    width: 25%;
+    height: 340px;
+  }
+  .video-banner__center {
+    width: 60%;
+    height: 380px;
+  }
+  .video-banner__play {
+    width: 90px;
+    height: 90px;
+  }
+  .video-banner__play i {
+    font-size: 28px;
+  }
+
+  
+  .amenities__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  
+  .foods {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  .foods__content {
+    width: 100%;
+    max-width: 100%;
+  }
+  .foods__imgwrapper {
+    width: 100%;
+    max-width: 100%;
+    height: 360px;
+  }
+
+  
+  .reviews__photo {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero__page {
+    height: 70vh;
+    min-height: 450px;
+  }
+  .hero__content {
+    left: 5%;
+    padding-left: 15px;
+    border-left-width: 3px;
+  }
+  .carousel__button {
+    display: none;
+  }
+
+  .booking {
+    width: 92%;
+    margin: 20px auto;
+    padding: 16px 14px;
+  }
+  .booking__form__row__date {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .date-input,
+  .guest-input {
+    height: 50px;
+  }
+
+  .discover__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .discover__btn {
+    width: 100%;
+    height: 52px;
+  }
+
+  .video-banner {
+    height: 280px;
+  }
+  .video-banner__side {
+    display: none;
+  }
+  .video-banner__center {
+    width: 100%;
+    height: 280px;
+  }
+  .video-banner__play {
+    width: 70px;
+    height: 70px;
+  }
+  .video-banner__play i {
+    font-size: 24px;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+  .footer__column {
+    width: 100%;
+  }
+  .footer__customer__service {
+    justify-content: center;
+  }
+  .footer__customer__service--icons {
+    justify-content: center;
+  }
+  .footer-bottom__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero__page {
+    height: 65vh;
+    min-height: 420px;
+  }
+  .hero__content__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .hero__content__description {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .hero__content__button {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .luxury__rooms {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .luxury__rooms__col {
+    width: 100%;
+    min-height: 260px;
+  }
+  .luxury--btn {
+    width: 100%;
+    height: 52px;
+  }
+
+  .amenities__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .amenities__btn {
+    width: 100%;
+    height: 52px;
+  }
+
+  .menu__item {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .menu__price {
+    margin-left: 0;
+    font-size: 26px;
+  }
+  .foods__btn {
+    width: 100%;
+    height: 52px;
+  }
+
+  .reviews__card {
+    padding: 20px 15px;
+  }
+  .reviews__card::before {
+    font-size: 90px;
+  }
+
+  .room__card {
+    height: 380px;
+  }
+  .room__card__btn {
+    opacity: 1; 
+  }
+}
+
+@media (max-width: 375px) {
+  .nav__logo img {
+    height: 45px;
+  }
+  .hero__content__title {
+    font-size: 25px;
+  }
+  .booking {
+    width: 95%;
+    padding: 12px 10px;
+  }
+  .guest-input .guest-placeholder {
+    font-size: 13px;
+  }
+  .date-input .date-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  label.navbar-toggler {
+    display: none !important;
+  }
+
+  .nav__custom .container-fluid {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    gap: clamp(15px, 2.5vw, 40px) !important;
+    padding: 0 15px !important;
+  }
+
+  .nav__custom .navbar-brand {
+    margin-right: 0 !important;
+    flex-shrink: 0;
+  }
+
+  .nav__custom .navbar-collapse {
+    display: flex !important;
+    align-items: center !important;
+    flex-grow: 0 !important;
+    width: auto !important;
+  }
+
+  .nav__custom .navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    gap: clamp(4px, 0.8vw, 12px);
+  }
+
+  .nav__custom .nav__book {
+    margin-left: clamp(10px, 2vw, 25px) !important;
+    flex-shrink: 0;
+  }
+}
+

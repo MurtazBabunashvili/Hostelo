@@ -6,23 +6,43 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 60px 0;
+  padding: clamp(30px, 5vw, 60px) 15px;
 }
 
 .team__title {
-  @include subtitle($font-xlarge, $nav-bookcolor);
+  @include subtitle(clamp(26px, 3.5vw, 38px), $nav-bookcolor);
   font-weight: $font-xxbold;
+  text-align: center;
 }
 
 .team__description {
-  @include description-nowidth($font-medium, $nav-bgcolor, 0px);
+  @include description-nowidth(clamp(16px, 2vw, 22px), $nav-bgcolor, 0px);
+  text-align: center;
+  max-width: 600px;
+  padding: 0 10px;
 }
+
 .team__grid {
-  width: 72%;
-  margin-top: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+
+  @media (max-width: 991.98px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 92%;
+    gap: 20px;
+  }
+
+  @media (max-width: 575.98px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 340px;
+    gap: 25px;
+    margin-top: 20px;
+  }
 }
 
 .team__card {

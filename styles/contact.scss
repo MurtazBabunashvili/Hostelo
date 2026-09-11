@@ -6,22 +6,24 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 60px 0 90px;
+  padding: clamp(30px, 5vw, 60px) 15px;
   background-color: white;
 }
 
 .contact__title {
-  @include subtitle($font-xlarge, $nav-bookcolor);
+  @include subtitle(clamp(26px, 3.5vw, 38px), $nav-bookcolor);
   font-weight: $font-xxbold;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .contact__description {
-  @include description($font-xxxsmall, $nav-bgcolor, 0px, 100%);
+  @include description(clamp(15px, 1.8vw, 19px), $nav-bgcolor, 0px, 100%);
   max-width: 680px;
   text-align: center;
   margin-bottom: 25px;
   line-height: 1.6;
+  padding: 0 10px;
 }
 
 .contact__divider {
@@ -29,16 +31,23 @@
   height: 3px;
   background-color: $nav-bookhovercolor;
   border-radius: 2px;
-  margin-bottom: 60px;
+  margin-bottom: clamp(30px, 4vw, 60px);
 }
 
 .contact__container {
-  width: 72%;
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: clamp(30px, 4vw, 60px);
+
+  @media (max-width: 991.98px) {
+    flex-direction: column-reverse;
+    width: 92%;
+    gap: clamp(35px, 6vw, 55px);
+  }
 }
 
 .contact__form-col {
@@ -143,6 +152,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .contact__image-wrapper {
@@ -150,14 +160,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 480px;
-  height: 480px;
+  width: 100%;
+  max-width: 480px;
 }
 
 .contact__image-circle {
   position: absolute;
-  width: 420px;
-  height: 420px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(230px, 68vw, 420px);
+  height: clamp(230px, 68vw, 420px);
   border-radius: 50%;
   background: linear-gradient(135deg, $ivory, #e8e3d8);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -166,11 +179,14 @@
 
 .contact__image {
   position: relative;
-  max-width: 100%;
-  max-height: 520px;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  max-height: clamp(280px, 46vh, 520px);
   object-fit: contain;
   z-index: 2;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .contact-info {
@@ -218,4 +234,10 @@
   line-height: 1.6;
   color: #666;
   margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .contact__form-row {
+    grid-template-columns: 1fr !important;
+  }
 }

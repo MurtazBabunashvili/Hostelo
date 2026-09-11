@@ -39,7 +39,7 @@
 }
 .room-avail-section {
   width: 100%;
-  padding: 60px 0 90px;
+  padding: clamp(30px, 5vw, 60px) 15px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -53,9 +53,17 @@
 }
 
 .room-avail-container {
-  width: 72%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 575.98px) {
+  .room-avail-container {
+    width: 94%;
+  }
 }
 
 .room-avail__title {

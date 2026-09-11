@@ -38,68 +38,77 @@
     <link rel="stylesheet" href="../styles/blog.css" />
   </head>
   <body>
+        <!-- !Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light nav__custom">
-      <a class="navbar-brand nav__logo" href="#">
-        <img src="../images/logo.png" width="100%" height="65" alt="ჰოსტელო" />
-      </a>
+      <div class="container-fluid px-3 px-lg-5">
+        <a class="navbar-brand nav__logo" href="../index.html">
+          <img src="../images/logo.png" height="55" alt="Hostello" />
+        </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./home.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              About
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./about_us.html">About Us</a>
-              <a class="dropdown-item" href="./comments.html">Comments</a>
-              <a class="dropdown-item" href="./team.html"> Our Team</a>
-              <a class="dropdown-item" href="./foods.html">Foods & Bars</a>
-              <a class="dropdown-item" href="./amenities.html"> Amenities</a>
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./room_list.html"
-              >Room List<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./room_availability.html"
-              >Rooms Available <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./blog.html"
-              >Blog <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html"
-              >Contact <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item nav__hamburger">
-            <i class="bi bi-list"></i>
-          </li>
-          <li class="nav-item nav__book ml-3">
+<input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label
+          class="navbar-toggler"
+          for="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </label>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./about_us.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./about_us.html">About Us</a>
+                <a class="dropdown-item" href="./comments.html">Comments</a>
+                <a class="dropdown-item" href="./team.html">Our Team</a>
+                <a class="dropdown-item" href="./foods.html">Foods & Bars</a>
+                <a class="dropdown-item" href="./amenities.html">Amenities</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./room_list.html">Room List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./room_availability.html"
+                >Rooms Available</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__book ml-lg-3 my-2 my-lg-0">
             <a href="./room_availability.html">
               <i class="bi bi-calendar4-week"></i>
               <span>Book Now +</span>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -108,7 +117,7 @@
         <h1>Blog</h1>
 
         <div class="about__hero__navigation">
-          <a href="./home.html">Home</a>
+          <a href="../index.html">Home</a>
           <i class="bi bi-chevron-right"></i>
           <span>Blog</span>
         </div>
@@ -130,22 +139,22 @@
             <h3 class="blog-widget__title">Recent Posts</h3>
             <ul class="blog-list">
               <li>
-                <a href="#">A Behind the Scenes Look at Metro Hotels' Direct Channel Success.</a>
+                <a href="./blog.html">A Behind the Scenes Look at Metro Hotels' Direct Channel Success.</a>
               </li>
               <li>
-                <a href="#">The Importance of an Integrated Booking Engine In a Hotel's Direct Booking.</a>
+                <a href="./blog.html">The Importance of an Integrated Booking Engine In a Hotel's Direct Booking.</a>
               </li>
               <li>
-                <a href="#">The Secret to Summertime Success on Your Hotel's Website.</a>
+                <a href="./blog.html">The Secret to Summertime Success on Your Hotel's Website.</a>
               </li>
               <li>
-                <a href="#">How H10 Hotels grew their marketing database by capturing first-party data?</a>
+                <a href="./blog.html">How H10 Hotels grew their marketing database by capturing first-party data?</a>
               </li>
               <li>
-                <a href="#">How Penta Hotels Tripled Their Survey Answers Using Form Builder?</a>
+                <a href="./blog.html">How Penta Hotels Tripled Their Survey Answers Using Form Builder?</a>
               </li>
               <li>
-                <a href="#">Inside Palacio Estoril: Combining Historical Charm with Cutting-Edge Hospitality.</a>
+                <a href="./blog.html">Inside Palacio Estoril: Combining Historical Charm with Cutting-Edge Hospitality.</a>
               </li>
             </ul>
           </div>
@@ -153,39 +162,39 @@
           <div class="blog-widget">
             <h3 class="blog-widget__title">Archives</h3>
             <ul class="blog-list">
-              <li><a href="#">January 2024</a></li>
-              <li><a href="#">February 2024</a></li>
-              <li><a href="#">March 2024</a></li>
-              <li><a href="#">April 2024</a></li>
-              <li><a href="#">May 2024</a></li>
-              <li><a href="#">June 2024</a></li>
+              <li><a href="./blog.html">January 2024</a></li>
+              <li><a href="./blog.html">February 2024</a></li>
+              <li><a href="./blog.html">March 2024</a></li>
+              <li><a href="./blog.html">April 2024</a></li>
+              <li><a href="./blog.html">May 2024</a></li>
+              <li><a href="./blog.html">June 2024</a></li>
             </ul>
           </div>
 
           <div class="blog-widget">
             <h3 class="blog-widget__title">Categories</h3>
             <ul class="blog-list">
-              <li><a href="#">Europe</a></li>
-              <li><a href="#">Ireland</a></li>
-              <li><a href="#">Dubai</a></li>
-              <li><a href="#">New York</a></li>
-              <li><a href="#">Singapore</a></li>
-              <li><a href="#">Australia</a></li>
-              <li><a href="#">Hong Kong</a></li>
+              <li><a href="./blog.html">Europe</a></li>
+              <li><a href="./blog.html">Ireland</a></li>
+              <li><a href="./blog.html">Dubai</a></li>
+              <li><a href="./blog.html">New York</a></li>
+              <li><a href="./blog.html">Singapore</a></li>
+              <li><a href="./blog.html">Australia</a></li>
+              <li><a href="./blog.html">Hong Kong</a></li>
             </ul>
           </div>
 
           <div class="blog-widget">
             <h3 class="blog-widget__title">Tags</h3>
             <div class="blog-tags">
-              <a href="#">Vacation</a>
-              <a href="#">Adventure</a>
-              <a href="#">Explore</a>
-              <a href="#">Destination</a>
-              <a href="#">Travel</a>
-              <a href="#">Tour</a>
-              <a href="#">Tourism</a>
-              <a href="#">Holiday</a>
+              <a href="./blog.html">Vacation</a>
+              <a href="./blog.html">Adventure</a>
+              <a href="./blog.html">Explore</a>
+              <a href="./blog.html">Destination</a>
+              <a href="./blog.html">Travel</a>
+              <a href="./blog.html">Tour</a>
+              <a href="./blog.html">Tourism</a>
+              <a href="./blog.html">Holiday</a>
             </div>
           </div>
         </aside>
@@ -194,7 +203,7 @@
           <article class="blog-article">
             <img
               src="https://hotelo.mhrtheme.com/wp-content/uploads/2024/09/blog-4.jpg"
-              alt="ბლოგის სტატია"
+              alt="Blog Article"
               class="blog-article__img"
             />
             <h2 class="blog-article__title">
@@ -223,13 +232,13 @@
               <div class="blog-comment-item">
                 <img
                   src="https://hotelo.mhrtheme.com/wp-content/uploads/2024/09/testimonial-1.png"
-                  alt="ენდრიუ სმითი"
+                  alt="Andrew Smith"
                   class="blog-comment__avatar"
                 />
                 <div class="blog-comment__body">
                   <span class="blog-comment__author">Andrew Smith</span>
                   <span class="blog-comment__meta">
-                    Jan 10, 2024 at 10:09 pm • <a href="#">Reply</a>
+                    Jan 10, 2024 at 10:09 pm • <a href="./blog.html">Reply</a>
                   </span>
                   <p class="blog-comment__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut enim sagittis, lacinia elit non, fermentum mauris. Morbi lectus urna, molestie quis nisi ut, rutrum consequat eros. Praesent commodo, nunc varius fermentum dictum, erat tortor commodo nunc, eu mollis purus ante vitae ex. Proin facilisis condimentum mi vitae porta.
@@ -240,13 +249,13 @@
               <div class="blog-comment-item">
                 <img
                   src="https://hotelo.mhrtheme.com/wp-content/uploads/2024/09/testimonial-2.png"
-                  alt="ჯეინ რონანი"
+                  alt="Jane Ronan"
                   class="blog-comment__avatar"
                 />
                 <div class="blog-comment__body">
                   <span class="blog-comment__author">Jane Ronan</span>
                   <span class="blog-comment__meta">
-                    Jan 13, 2025 at 10:59 pm • <a href="#">Reply</a>
+                    Jan 13, 2025 at 10:59 pm • <a href="./blog.html">Reply</a>
                   </span>
                   <p class="blog-comment__text">
                     Aliquam nunc nisi, ultrices et rhoncus vitae, mattis nec ex. Sed at urna eget lectus rutrum ornare ut quis nibh. In tincidunt interdum mollis. Quisque quam nunc, faucibus sit amet ex sit amet, varius porttitor felis. Maecenas placerat risus lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -257,13 +266,13 @@
               <div class="blog-comment-item">
                 <img
                   src="https://hotelo.mhrtheme.com/wp-content/uploads/2024/09/testimonial-3.png"
-                  alt="ჯენინ პამელა"
+                  alt="Jeanine Pamela"
                   class="blog-comment__avatar"
                 />
                 <div class="blog-comment__body">
                   <span class="blog-comment__author">Jenin Pamela</span>
                   <span class="blog-comment__meta">
-                    Feb 20, 2025 at 11:16 pm • <a href="#">Reply</a>
+                    Feb 20, 2025 at 11:16 pm • <a href="./blog.html">Reply</a>
                   </span>
                   <p class="blog-comment__text">
                     In tempus gravida libero sed pharetra. Proin fringilla posuere elit, in sagittis magna auctor quis. Fusce ullamcorper luctus leo a egestas. Mauris eget condimentum orci, at consectetur felis. Donec porttitor feugiat pellentesque.
@@ -317,7 +326,7 @@
       <div class="footer__row">
         <div class="footer__column">
           <div class="footer__imgwrapper">
-            <img src="../images/logo-white.png" alt="ჰოსტელო" />
+            <img src="../images/logo-white.png" alt="Hostello" />
           </div>
           <p class="footer__description">
             We guarantee that you will have a peaceful and enjoyable holiday
@@ -359,9 +368,9 @@
         <div class="footer-bottom__links">
           <a href="./about_us.html">About Us</a>
           <a href="./room_list.html">Rooms List</a>
-          <a href="#">Bookings List</a>
+          <a href="./room_availability.html">Bookings List</a>
           <a href="./room_availability.html">Search Room</a>
-          <a href="#">Terms and Conditions</a>
+          <a href="./about_us.html">Terms and Conditions</a>
           <a href="./contact.html">Contact</a>
         </div>
 

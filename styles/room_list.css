@@ -42,32 +42,53 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 60px 0 90px;
+  padding: clamp(30px, 5vw, 60px) 15px;
 }
 
 .room-list__title {
-  font-size: 38px;
+  font-size: clamp(26px, 3.5vw, 38px);
   color: #003350;
   font-weight: 1000;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .room-list__description {
-  font-size: 19px;
+  font-size: clamp(15px, 1.8vw, 19px);
   color: #3a3a3a;
   letter-spacing: 0px;
   width: 100%;
   max-width: 680px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   line-height: 1.6;
+  padding: 0 10px;
 }
 
 .room-list__grid {
-  width: 72%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .room-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 92%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .room-list__grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 350px;
+    gap: 25px;
+  }
 }
 
 .room-card {
@@ -225,4 +246,4 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-top: 2px;
-}/*# sourceMappingURL=room_list.css.map */
+}

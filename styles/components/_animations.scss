@@ -1,7 +1,7 @@
 @keyframes bookNowBtn {
   0% {
     transform: scaleX(0);
-    transform-origin: left; // იწყებს ანიმაციას მარცხნიდან
+    transform-origin: left; // Starts animation from left
   }
 
   100% {
@@ -13,7 +13,7 @@
 @keyframes heroBtn {
   0% {
     transform: scaleX(0);
-    transform-origin: right; // იწყებს ანიმაციას მარჯვნიდან
+    transform-origin: right; // Starts animation from right
   }
 
   100% {

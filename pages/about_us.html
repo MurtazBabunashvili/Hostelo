@@ -41,67 +41,73 @@
   <body>
     <!-- !Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light nav__custom">
-      <a class="navbar-brand nav__logo" href="#">
-        <img src="../images/logo.png" width="100%" height="65" alt="ჰოსტელო" />
-      </a>
+      <div class="container-fluid px-3 px-lg-5">
+        <a class="navbar-brand nav__logo" href="../index.html">
+          <img src="../images/logo.png" height="55" alt="Hostello" />
+        </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./home.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              About
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./about_us.html">About Us</a>
-              <a class="dropdown-item" href="./comments.html">Comments</a>
-              <a class="dropdown-item" href="./team.html"> Our Team</a>
-              <a class="dropdown-item" href="./foods.html">Foods & Bars</a>
-              <a class="dropdown-item" href="./amenities.html"> Amenities</a>
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./room_list.html"
-              >Room List<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./room_availability.html"
-              >Rooms Available <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./blog.html"
-              >Blog <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html"
-              >Contact <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item nav__hamburger">
-            <i class="bi bi-list"></i>
-          </li>
-          <li class="nav-item nav__book ml-3">
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label
+          class="navbar-toggler"
+          for="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </label>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./about_us.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./about_us.html">About Us</a>
+                <a class="dropdown-item" href="./comments.html">Comments</a>
+                <a class="dropdown-item" href="./team.html">Our Team</a>
+                <a class="dropdown-item" href="./foods.html">Foods & Bars</a>
+                <a class="dropdown-item" href="./amenities.html">Amenities</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./room_list.html">Room List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./room_availability.html"
+                >Rooms Available</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__book ml-lg-3 my-2 my-lg-0">
             <a href="./room_availability.html">
               <i class="bi bi-calendar4-week"></i>
               <span>Book Now +</span>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -111,7 +117,7 @@
         <h1>About Us</h1>
 
         <div class="about__hero__navigation">
-          <a href="./home.html">Home</a>
+          <a href="../index.html">Home</a>
           <i class="bi bi-chevron-right"></i>
           <span>About Us</span>
         </div>
@@ -123,7 +129,7 @@
       <div class="luxury__column">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/hostello-about-1.jpg"
-          alt="ლუქს ნომერი"
+          alt="Deluxe Room"
         />
       </div>
       <div class="luxury__column">
@@ -174,46 +180,58 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+            <div
+              class="card h-100 border-0 shadow-sm about-card text-center p-4"
+            >
               <div class="about-card__icon mb-3">
                 <i class="bi bi-shield-check"></i>
               </div>
               <h4 class="card-title about-card__title">Safe & Secure</h4>
               <p class="card-text about-card__text">
-                Your safety and comfort are guaranteed with 24/7 security and certified hygiene standards.
+                Your safety and comfort are guaranteed with 24/7 security and
+                certified hygiene standards.
               </p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+            <div
+              class="card h-100 border-0 shadow-sm about-card text-center p-4"
+            >
               <div class="about-card__icon mb-3">
                 <i class="bi bi-geo-alt"></i>
               </div>
               <h4 class="card-title about-card__title">Prime Location</h4>
               <p class="card-text about-card__text">
-                Situated in the heart of scenic nature with quick and easy access to top city attractions.
+                Situated in the heart of scenic nature with quick and easy
+                access to top city attractions.
               </p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+            <div
+              class="card h-100 border-0 shadow-sm about-card text-center p-4"
+            >
               <div class="about-card__icon mb-3">
                 <i class="bi bi-award"></i>
               </div>
               <h4 class="card-title about-card__title">5-Star Service</h4>
               <p class="card-text about-card__text">
-                Personalized hospitality crafted to make every moment of your vacation unforgettable.
+                Personalized hospitality crafted to make every moment of your
+                vacation unforgettable.
               </p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 border-0 shadow-sm about-card text-center p-4">
+            <div
+              class="card h-100 border-0 shadow-sm about-card text-center p-4"
+            >
               <div class="about-card__icon mb-3">
                 <i class="bi bi-cup-hot"></i>
               </div>
               <h4 class="card-title about-card__title">Gourmet Dining</h4>
               <p class="card-text about-card__text">
-                Exquisite world cuisine prepared by award-winning chefs using organic, fresh ingredients.
+                Exquisite world cuisine prepared by award-winning chefs using
+                organic, fresh ingredients.
               </p>
             </div>
           </div>
@@ -254,7 +272,9 @@
                   data-parent="#aboutFaqAccordion"
                 >
                   <div class="card-body faq-body px-3 py-3">
-                    Check-in begins at 2:00 PM and check-out is until 12:00 PM. Early check-in and late check-out can be requested based on room availability.
+                    Check-in begins at 2:00 PM and check-out is until 12:00 PM.
+                    Early check-in and late check-out can be requested based on
+                    room availability.
                   </div>
                 </div>
               </div>
@@ -279,7 +299,8 @@
                   data-parent="#aboutFaqAccordion"
                 >
                   <div class="card-body faq-body px-3 py-3">
-                    Yes, a complimentary gourmet buffet breakfast is included for all guests in our main restaurant.
+                    Yes, a complimentary gourmet buffet breakfast is included
+                    for all guests in our main restaurant.
                   </div>
                 </div>
               </div>
@@ -304,7 +325,8 @@
                   data-parent="#aboutFaqAccordion"
                 >
                   <div class="card-body faq-body px-3 py-3">
-                    Yes, we offer complimentary VIP airport transfers for our guests upon prior reservation.
+                    Yes, we offer complimentary VIP airport transfers for our
+                    guests upon prior reservation.
                   </div>
                 </div>
               </div>
@@ -323,25 +345,25 @@
       <div class="reviews__photo reviews__topleft">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-5.png"
-          alt="სტუმრის შეფასება"
+          alt="Guest Review"
         />
       </div>
       <div class="reviews__photo reviews__topright">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-2.png"
-          alt="სტუმრის შეფასება"
+          alt="Guest Review"
         />
       </div>
       <div class="reviews__photo reviews__bottomleft">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-4.png"
-          alt="სტუმრის შეფასება"
+          alt="Guest Review"
         />
       </div>
       <div class="reviews__photo reviews__bottomright">
         <img
           src="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2022/10/comment-people-1.png"
-          alt="სტუმრის შეფასება"
+          alt="Guest Review"
         />
       </div>
 
@@ -407,7 +429,7 @@
       <div class="footer__row">
         <div class="footer__column">
           <div class="footer__imgwrapper">
-            <img src="../images/logo-white.png" alt="ჰოსტელო" />
+            <img src="../images/logo-white.png" alt="Hostello" />
           </div>
           <p class="footer__description">
             We guarantee that you will have a peaceful and enjoyable holiday
@@ -449,9 +471,9 @@
         <div class="footer-bottom__links">
           <a href="./about_us.html">About Us</a>
           <a href="./room_list.html">Rooms List</a>
-          <a href="#">Bookings List</a>
+          <a href="./room_availability.html">Bookings List</a>
           <a href="./room_availability.html">Search Room</a>
-          <a href="#">Terms and Conditions</a>
+          <a href="./about_us.html">Terms and Conditions</a>
           <a href="./contact.html">Contact</a>
         </div>
 
@@ -468,14 +490,19 @@
 
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 4,
-          loop: false,
+        $(".reviews__carousel").owlCarousel({
+          items: 3,
+          loop: true,
           nav: false,
           dots: true,
           autoplay: false,
           dotsEach: 1,
           margin: 20,
+          responsive: {
+            0: { items: 1, margin: 10 },
+            768: { items: 2, margin: 15 },
+            1200: { items: 3, margin: 20 },
+          },
         });
       });
     </script>
