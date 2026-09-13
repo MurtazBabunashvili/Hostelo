@@ -43,7 +43,7 @@
   align-items: center;
   gap: clamp(30px, 4vw, 60px);
 
-  @media (max-width: 991.98px) {
+  @media (max-width: 992px) {
     flex-direction: column-reverse;
     width: 92%;
     gap: clamp(35px, 6vw, 55px);
@@ -99,7 +99,10 @@
   font-size: 15px;
   font-family: $font-body;
   color: $nav-bgcolor;
-  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   outline: none;
 
   &::placeholder {
@@ -197,7 +200,9 @@
 .contact-info-card {
   background-color: #ffffff;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-5px);
@@ -236,7 +241,7 @@
   margin: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .contact__form-row {
     grid-template-columns: 1fr !important;
   }

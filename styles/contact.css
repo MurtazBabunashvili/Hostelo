@@ -84,7 +84,7 @@
   gap: clamp(30px, 4vw, 60px);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .contact__container {
     flex-direction: column-reverse;
     width: 92%;
@@ -302,7 +302,7 @@
   margin: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .contact__form-row {
     grid-template-columns: 1fr !important;
   }

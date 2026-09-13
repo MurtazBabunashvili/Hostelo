@@ -37,9 +37,18 @@
     />
 
     <link rel="stylesheet" href="../styles/home.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-2.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://garantiwebtasarim.net/wordpress/hostello/wp-content/uploads/2026/05/slider-hostello-3.jpg"
+    />
   </head>
   <body>
-    
     <!-- !Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light nav__custom">
       <div class="container-fluid px-3 px-lg-5">
@@ -47,7 +56,7 @@
           <img src="../images/logo.png" height="55" alt="Hostello" />
         </a>
 
-<input
+        <input
           type="checkbox"
           id="nav-toggle"
           class="nav-toggle-checkbox"
@@ -166,25 +175,27 @@
             </div>
           </div>
         </div>
-        <a
+        <button
+          type="button"
           class="carousel-control-prev carousel__button carousel__button--1"
-          href="#carouselExampleControls"
-          role="button"
+          data-target="#carouselExampleControls"
           data-slide="prev"
+          aria-label="Previous"
         >
           <span class="carousel-control-prev-icon"></span>
           <span class="sr-only">Previous</span>
-        </a>
+        </button>
 
-        <a
+        <button
+          type="button"
           class="carousel-control-next carousel__button carousel__button--2"
-          href="#carouselExampleControls"
-          role="button"
+          data-target="#carouselExampleControls"
           data-slide="next"
+          aria-label="Next"
         >
           <span class="carousel-control-next-icon"></span>
           <span class="sr-only">Next</span>
-        </a>
+        </button>
       </div>
 
       <div class="booking">
@@ -215,7 +226,9 @@
           </div>
 
           <div class="booking__form__row">
-            <p class="booking__form__description" style="visibility: hidden;">&nbsp;</p>
+            <p class="booking__form__description" style="visibility: hidden">
+              &nbsp;
+            </p>
             <button type="button" class="booking__search__button">
               Search
             </button>
@@ -776,6 +789,14 @@
 
     <script>
       $(document).ready(function () {
+        $("#carouselExampleControls").carousel({
+          interval: false,
+          wrap: true,
+          pause: false,
+          keyboard: true,
+          touch: true,
+        });
+
         $(".room__carousel").owlCarousel({
           items: 4,
           loop: false,
