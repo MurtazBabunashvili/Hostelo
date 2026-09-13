@@ -2045,7 +2045,7 @@ label.navbar-toggler:focus {
     align-items: center !important;
     max-width: 1200px !important;
     margin: 0 auto !important;
-    gap: clamp(15px, 2.5vw, 40px) !important;
+    gap: clamp(28px, 3.5vw, 44px) !important;
     padding: 0 15px !important;
   }
 
@@ -2065,11 +2065,21 @@ label.navbar-toggler:focus {
     display: flex !important;
     align-items: center !important;
     margin: 0 !important;
-    gap: clamp(4px, 0.8vw, 12px);
+    gap: clamp(8px, 1.2vw, 18px);
   }
 
   .nav__custom .nav__book {
-    margin-left: clamp(10px, 2vw, 25px) !important;
+    margin-left: clamp(28px, 3.5vw, 44px) !important;
     flex-shrink: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav__custom .container-fluid {
+    gap: clamp(48px, 6vw, 140px) !important;
+  }
+
+  .nav__custom .nav__book {
+    margin-left: clamp(48px, 6vw, 140px) !important;
   }
 }
